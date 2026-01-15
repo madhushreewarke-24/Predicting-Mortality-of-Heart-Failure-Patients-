@@ -1,5 +1,11 @@
 # Predicting-Mortality-of-Heart-Failure-Patients-
 Heart failure is a serious clinical condition with high mortality, thus there is a need to accurately predict the prognosis of patients to manage them clinically effectively. The project here aimed to develop and test machine learning models for mortality prediction among patients with heart failure based on a public domain dataset of 299 patient records. Two different algorithms, namely a Support Vector Machine (SVM) and multi-layer Artificial Neural Network (ANN), were used. The information was pre-processed through standard scaling and divided into training and test sets for secure evaluation. Performance was evaluated based on major metrics such as accuracy, precision, recall, and F1-score. The performance demonstrates that both models worked well but the ANN showed better predictive power with greater accuracy and better F1-score to identify risk patients. This research concludes that machine learning, specifically neural networks, has great promise as an assistive tool for clinicians to detect high-risk heart failure patients, hence providing earlier and more tailored interventions. 
 
+# Methodology
+1. Data Collection:Dataset: Heart Failure Clinical Records Dataset. Features are age, serum creatinine, serum sodium, ejection fraction, time, and other clinical characteristics. 
+2. Exploratory Data Analysis (EDA):Plotting survival vs. death events. Correlation heatmap to investigate the interactions between variables. Boxen and swarm plots for comparing distributions by classes. 
+3. Data Preprocessing:Dealt with missing values (no missing values). Normalized features using StandardScaler. Divided dataset into training set and test set (70:30 split). 
+4. Model Building:SVM Model: Used Support Vector Classifier for binary classification. ANN Model: Constructed with 3 layers: input (ReLU), hidden (ReLU + Dropout), and output (Sigmoid).Optimizer: Adam, Loss: Binary Crossentropy, Metric: Accuracy.EarlyStopping used to avoid overfitting. 
+5. Model Evaluation:Metrics: Accuracy, Precision, Recall, F1-score, Confusion Matrix. Training vs Validation curves plotted to interpret ANN performance.
 # Dataset Used
 <img width="1901" height="804" alt="Screenshot 2025-09-05 161846" src="https://github.com/user-attachments/assets/8dc808a3-a832-4483-8586-b18e70ac1846" />
